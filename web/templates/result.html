@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{pageTitle}}</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="simple-card result-card">
+        <div class="card-strip" style="background: {{accentColor}};"></div>
+        <header class="hero-block">
+          <p class="small-text">College Mess System</p>
+          <h1>{{heading}}</h1>
+        </header>
+
+        <div class="content-block result-copy">
+          <p>{{message}}</p>
+
+          <div class="action-stack">
+            {{actionButtons}}
+            {{menuLink}}
+            {{loginLink}}
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

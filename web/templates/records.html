@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{pageTitle}}</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="simple-card">
+        <header class="hero-block">
+          <p class="small-text">Student View</p>
+          <h1>Meal Records</h1>
+          <p class="muted-text">Roll Number: {{roll}}</p>
+        </header>
+
+        <div class="content-block">
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Meal</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                {{rows}}
+              </tbody>
+            </table>
+          </div>
+
+          <a class="button button-secondary" href="{{backLink}}">Back to Login</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

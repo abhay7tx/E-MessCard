@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{pageTitle}}</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="simple-card">
+        <div class="card-strip" style="background: {{mealColor}};"></div>
+        <header class="hero-block hero-block-dark">
+          <p class="small-text">College Mess System</p>
+          <h1>Student Meal Login</h1>
+          <p class="muted-on-dark">{{today}}</p>
+          <span class="meal-badge" style="background: {{mealColor}};">{{mealType}}</span>
+        </header>
+
+        <form class="content-block form-stack" method="POST" action="/login">
+          <input type="hidden" name="meal" value="{{mealType}}" />
+          <input type="hidden" name="admin" value="{{adminId}}" />
+
+          <label>
+            <span>Roll Number</span>
+            <input
+              type="text"
+              name="roll"
+              placeholder="Enter roll number"
+              autocomplete="off"
+              required
+            />
+          </label>
+
+          <label>
+            <span>Password</span>
+            <input
+              type="password"
+              name="pass"
+              placeholder="Enter password"
+              required
+            />
+          </label>
+
+          <button
+            class="button button-primary"
+            style="background: {{mealColor}}; border-color: {{mealColor}};"
+            type="submit"
+          >
+            Record My Meal
+          </button>
+
+          <a class="button button-secondary" href="/menu?admin={{adminId}}&day=">
+            See Today's Menu
+          </a>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
