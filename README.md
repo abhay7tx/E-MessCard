@@ -2,8 +2,9 @@
 
 > A digital mess management system — students scan a QR code with their phone, log in via browser, and their meal is recorded instantly. Built with Java AWT, SQLite, and a built-in web server.
 
-> NOTE : This is Just a Small Project as this was my first for My Learnings,So Here I Have mainly Focused On my Idea to think Features and Functionalities Theoritically  Rather then Optimized and Perfect Developments.
-Surely I Found this Idea Very Unique and Will Make a Final Version Using More Strong Language and A Cloud DataBase server..
+> NOTE : This is a small project that I created as part of my learning journey. 
+Here, I mainly focused on developing ideas for features and functionalities theoretically rather than on optimized and perfect implementation. 
+I found this idea to be quite unique, and I plan to build a final version using a more robust programming language and a cloud-based database server.
 ---
 
 ## ✅ Requirements
